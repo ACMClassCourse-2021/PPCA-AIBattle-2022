@@ -1,8 +1,8 @@
-## PPCA AI Battle 2022 (Week 3~4, Draft)
+# PPCA AI Battle 2022 (Week 3~4)
 
 **In the AI Battle project, we will focus on learning about neural networks in Week 3~4.**
 
-### Learning goals
+## Learning goals
 
 - Learn to program in Python
 - Understand the basic usage of Pytorch
@@ -14,37 +14,37 @@
   - ...
 - Train a neural network model for playing Gomoku 9x9
 
-### Installation
+## Installation
 
 Only the environment installation guide for ubuntu is provided.
 
-#### Miniconda installation
+### Miniconda installation
 
 https://docs.conda.io/en/latest/miniconda.html
 
-#### Pytorch installation via conda
+### Pytorch installation via conda
 
     conda create -n "your_venv_name" python=3.9
     conda activate your_venv_name
 
-##### GPU
+#### GPU
 
 If you have a discrete graphics card, use the following installation instructions.
 
     conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
-##### CPU only
+#### CPU only
 
     conda install pytorch torchvision torchaudio cpuonly -c pytorch
 
-#### Tensorboard installation via conda
+### Tensorboard installation via conda
 
     conda install tensorboardX
 
 
-### Execution
+## Execution
 
-#### Training
+### Training
 
 Download the dataset for Gomoku 9x9 and unzip it into the directory of this repository.
 
@@ -54,7 +54,7 @@ Start training a neural network model for Gomoku 9x9:
 
     python main.py
 
-#### Pitting
+### Pitting
 
 Play AI-AI or human-AI battles.
 
