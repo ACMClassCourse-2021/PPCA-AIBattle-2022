@@ -36,9 +36,9 @@ class Coach:
         for i in range(self.args.start_iter, self.args.num_iters + 1):
             print(f'------ITER {i}------')
             self.train(i)
-            if self.args.compare_with_random and (i - 1) % self.args.random_compare_freq == 0:
+            if self.args.compare_with_random and i % self.args.random_compare_freq == 0:
                 self.compareToRandom(i)
-            if self.args.compare_with_past and (i - 1) % self.args.past_compare_freq == 0:
+            if self.args.compare_with_past and i % self.args.past_compare_freq == 0:
                 self.compareToPast(i)
             print()
         self.writer.close()
@@ -75,7 +75,7 @@ class Coach:
         del datasets
 
     def compareToPast(self, iteration):
-        past = max(0, iteration-5)
+        past = max(0, iteration - 10)
         self.pnet.load_checkpoint(folder=self.args.checkpoint,
                                   filename=f'iteration-{past:04d}.pkl')
         print(f'PITTING AGAINST ITERATION {past}')

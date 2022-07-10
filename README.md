@@ -54,6 +54,10 @@ Start training a neural network model for Gomoku 9x9:
 
     python main.py
 
+During the training process, the latest model will pit against a old version model and the random-player every 10 rounds.
+
+The training will last for 50 iterations.
+
 ### Pitting
 
 Play AI-AI or human-AI battles.
