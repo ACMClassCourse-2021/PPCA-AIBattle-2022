@@ -40,7 +40,7 @@ class Sigmoid(Layer):
 class Relu():        
     def forward(self, x):
         """
-            TODO: Finish the forward propagation function and can save some variables if you need
+            TODO: Finish the forward propagation function and save some variables if you need
         """
 
     
@@ -55,7 +55,7 @@ class Relu():
 class Softmax_Cross_Entropy():
     def forward(self, x):
         """
-            TODO: Finish the forward propagation function and can save some variables if you need
+            TODO: Finish the forward propagation function and save some variables if you need
         """
     
     def backward(self, label):
@@ -96,7 +96,7 @@ class Linear(Layer):
     
     def update(self, learning_rate):
         """
-            TODO: Update W and b by gradients calculated in backward propagation function
+            TODO: Update W and b by gradients calculated in the backward propagation function
         """
 
 """
