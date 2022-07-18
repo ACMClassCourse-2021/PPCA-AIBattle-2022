@@ -21,7 +21,7 @@ class NNetArchitecture(nn.Module):
         """
             TODO: Design your neural network architecture
             Return a probability distribution of the next play (an array of length self.action_size) 
-            and the evaluation of the current state (a value between -1 and 1).
+            and the evaluation of the current state.
 
             pi = ...
             v = ...
