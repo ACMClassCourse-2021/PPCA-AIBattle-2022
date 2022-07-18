@@ -21,9 +21,9 @@ class NNPlayer:
 
         """
             Feature planes (one hot):
-                Feat 1: own pawns
-                Feat 2: opponent's pawns
-                Feat 3: all 1
+                Feat 1 (9x9 plane): own pawns
+                Feat 2 (9x9 plane): opponent's pawns
+                Feat 3 (9x9 plane): all 1
 
             TODO(optional): you can design your own feature planes
         """
