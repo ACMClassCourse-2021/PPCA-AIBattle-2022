@@ -14,6 +14,10 @@ class NNetArchitecture(nn.Module):
         self.action_size = game.getActionSize()
         self.args = args
 
+        """
+            TODO: Add anything you need
+        """
+
     def forward(self, s):
         # batch_size x feat_cnt x board_x x board_y
         s = s.view(-1, self.feat_cnt, self.board_x, self.board_y)   
