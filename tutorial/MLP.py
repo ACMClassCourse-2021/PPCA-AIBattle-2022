@@ -37,7 +37,7 @@ class Sigmoid(Layer):
     def update(self, learning_rate):
         pass
 
-class Relu():        
+class Relu(Layer):        
     def forward(self, x):
         """
             TODO: Finish the forward propagation function and save some variables if you need
@@ -52,7 +52,7 @@ class Relu():
     def update(self, learning_rate):
         pass
 
-class Softmax_Cross_Entropy():
+class Softmax_Cross_Entropy(Layer):
     def forward(self, x):
         """
             TODO: Finish the forward propagation function and save some variables if you need
