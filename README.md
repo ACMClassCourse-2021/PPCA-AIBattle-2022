@@ -31,11 +31,11 @@ https://docs.conda.io/en/latest/miniconda.html
 
 If you have a discrete graphics card, use the following installation instructions.
 
-    conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+    conda install pytorch=1.11.0 torchvision torchaudio cudatoolkit=11.3 -c pytorch
 
 #### CPU only
 
-    conda install pytorch torchvision torchaudio cpuonly -c pytorch
+    conda install pytorch=1.11.0 torchvision torchaudio cpuonly -c pytorch
 
 ### Tensorboard installation via conda
 
